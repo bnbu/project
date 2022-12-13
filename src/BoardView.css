@@ -1,0 +1,36 @@
+textarea {
+    resize : none;
+}
+img {
+    max-width: 100%;
+}
+
+#header_sub {
+    display:flex;
+}
+
+#writer {
+    flex-grow: 1;
+}
+
+#etc {
+    flex-grow: 1;
+}
+
+#date {
+    flex-grow: 50;
+}
+
+#count {
+    text-align: right;
+    flex-grow: 1;
+}
+
+#edit_box {
+    display: flex;
+    justify-content: left;
+}
+
+#edit_btn {
+    margin-left: auto;
+}

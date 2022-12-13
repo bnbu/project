@@ -1,0 +1,39 @@
+#music_list {
+    height : 703px;
+}
+
+.ms_img {
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.mu_del {
+    visibility: hidden;
+}
+
+.ms_list:hover {
+    background-color: lightgrey;
+}
+
+.ms_list:hover > .mu_del {
+    visibility: visible;
+}
+
+.musicPlayBtn {   
+    position: relative;
+    visibility: hidden;
+    left: 4%;
+    top: 5%;
+
+    width : 0;
+}
+
+.ms_list:hover > .musicPlayBtn {
+    visibility: visible;
+}
+
+#pagingBtn {
+    position: relative;
+    top: 33%;
+}
+

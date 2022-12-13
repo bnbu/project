@@ -1,0 +1,133 @@
+.music-player {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+}
+
+ .music-player .music-player-upper {
+    flex-basis: 50%;
+
+    display: flex;
+    flex-direction: row;
+}
+ .music-player .music-player-upper .control-panel {
+    flex-basis: 17%;
+    background: transparent;
+    display : flex;
+    position: relative;
+    top: 5%;
+    right: 12%;
+}
+ .music-player .music-player-upper .control-panel button {
+    position: relative;
+    background: transparent;
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+    color: black;
+    font-size: 32pt;
+    font-weight: bold;
+
+    top: 7px;
+    margin-left: 10px;
+}
+ .music-player .music-player-upper .control-panel button:hover {
+    color: lightgray
+}
+ .music-player .music-player-upper .music-title {
+    flex-basis: 70%;
+}
+ .music-player .music-player-upper .volume-panel {
+    position: relative;
+    flex-basis: 12%;
+    top: 27%;
+    right: 3%
+
+}
+.music-player .music-player-upper .volume-panel #volume-icon {
+    position: relative;
+    text-align: left;
+    top : 25%;
+    right : 50%;
+}
+
+ .music-player .music-player-upper .volume-panel #volume-line {
+    cursor: pointer;
+    height: fit-content;
+    position: relative;
+}
+ .music-player .music-player-upper .volume-panel #total-volume {
+    width: 100%;
+    height: 5px;
+    background: lightgray;
+}
+ .music-player .music-player-upper .volume-panel #current-volume {
+    position: relative;
+    width: 1%;
+    height: 5px;
+    background: black;
+
+    bottom: 5px;
+}
+
+ .music-player .music-player-upper .music-title #title {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+    color: black;
+    
+    margin: 0px;
+    padding: 17px 20px;
+    padding-bottom: 0;
+    text-align: left;
+}
+ .music-player .music-player-upper .music-title #composer {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    color: black;
+    
+    margin: 0px;
+    padding: 0 20px;
+    text-align: left;
+}
+ .music-player .duration-status {
+    flex-basis: auto;
+    display: flex;
+    padding: 20px 20px 0px 20px;
+
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+}
+ .music-player .duration-status #timeline {
+    width: 100%;
+    height: fit-content;
+    cursor: pointer;
+}
+ .music-player .duration-status #total-duration {
+    width: 100%;
+    height: 5px;
+    background: lightgray;
+}
+ .music-player .duration-status #current-time {
+    position: relative;
+    width: 1%;
+    height: 5px;
+    background: black;
+
+    bottom: 5px;
+}
+ .music-player .duration-status #time {
+    position: relative;
+    bottom: 10px;
+
+    margin: 0 0px;
+    text-align: right;
+
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    color: black;
+}
